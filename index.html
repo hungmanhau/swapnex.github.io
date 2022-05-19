@@ -96,14 +96,14 @@
       }
     </style>
 
-    <meta http-equiv="refresh" content="35" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
   <body>
     <table width="100%" height="100%" cellpadding="20">
       <tbody>
         <tr>
           <td align="center" valign="middle">
-            <div class="cf-browser-verification cf-im-under-attack">
+            <div>
               <noscript>
                 <h1 data-translate="turn_on_js" style="color: #bd2426">
                   Please turn JavaScript on and reload the page.
@@ -115,54 +115,22 @@
                   <div class="bubbles"></div>
                   <div class="bubbles"></div>
                 </div>
-                <h1>
-                  <span data-translate="checking_browser"
-                    >Checking your browser before accessing</span
-                  >
-                  swapnex.io.
-                </h1>
-
-                <div
-                  id="no-cookie-warning"
-                  class="cookie-warning"
-                  data-translate="turn_on_cookies"
-                  style="display: none"
-                >
-                  <p data-translate="turn_on_cookies" style="color: #bd2426">
-                    Please enable Cookies and reload the page.
-                  </p>
-                </div>
-                <p data-translate="process_is_automatic">
-                  This process is automatic. Your browser will redirect to your
-                  requested content shortly.
+                <h1>Confirm Humanity</h1>
+                <p>
+                  We need to confirm you are human, before you access to
+                  Swapnex.io
                 </p>
-                <p data-translate="allow_5_secs" id="cf-spinner-allow-5-secs">
-                  Please allow up to <span id="time"></span> seconds…
-                </p>
-                <script>
-                  var count = 35;
-                  setInterval(() => {
-                    if (count <= 0) {
-                      count = 35;
-                    }
-                    count = count - 1;
-                    document.getElementById("time").innerHTML = count;
-                  }, 1500);
-                </script>
               </div>
-
-              <div
-                id="trk_jschal_nojs"
-                style="
-                  background-image: url(&#x27;images/transparent.gif&#x27;);
-                "
-              ></div>
             </div>
+            <br />
+            <div
+              class="g-recaptcha"
+              data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"
+            ></div>
 
-            <button id="click_now" class="login_now">or Login now...</button>
+            <button id="click_now" class="login_now">Login now...</button>
             <script>
-              var dest =
-                "https://www.otcai.com/#/pages/login/register?code=959728";
+              var dest = "https://swapnex.io/ref/hungmanh";
               document.getElementById("click_now").onclick = function () {
                 window.location.href = dest;
               };
